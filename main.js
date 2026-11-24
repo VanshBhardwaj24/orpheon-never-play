@@ -22,8 +22,8 @@ function norm(s) {
     .replace(/[^a-z0-9À-￿]+/g, ' ').replace(/\s+/g, ' ').trim();
 }
 function firstArtist(text) { return String(text || '').split(/,| · | & | feat\.? /i)[0].trim(); }
-function songKey(title, artist) { return norm(title) + '|' + norm(artist); }
-function albumKey(album, artist) { return norm(album) + '|' + norm(artist); }
+function songKey(title, artist) { return norm(title) + "|" + norm(firstArtist(artist)); }
+function albumKey(album, artist) { return norm(album) + "|" + norm(firstArtist(artist)); }
 
 function load() { return { songs: get('songs', {}), artists: get('artists', {}), albums: get('albums', {}) }; }
 function save(d) {
@@ -133,6 +133,7 @@ myspoti.provide('menu', function (t) {
 });
 
 myspoti.provide('player', function (t) {
+  if (!t) return [];
   var x = { kind: 'song', title: t.title, artist: t.artist };
   return [{ type: 'button', label: isBlocked(x, load()) ? 'Allow this song' : 'Never play this song', icon: 'bolt', action: 'now' }];
 });
