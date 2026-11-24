@@ -1,0 +1,6 @@
+{
+  "offline": true,
+  "settings": { "words": "karaoke" },
+  "track": { "title": "Song karaoke", "artist": "Fine Band" },
+  "steps": [ { "event": "track" }, { "event": "track" }, { "event": "track" }, { "event": "track" }, { "event": "track" }, { "event": "track" }, { "event": "track" }, { "storage": { "streak": { "n": 0, "at": 0, "pauseUntil": 0 } } } ]
+}

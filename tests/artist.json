@@ -1,0 +1,9 @@
+{
+  "offline": true,
+  "track": { "title": "Song A", "artist": "Bad Band", "album": "Rec" },
+  "steps": [
+    { "hook": "menu", "input": { "kind": "track", "uri": "x:1", "title": "Song A", "subtitle": "Bad Band" }, "expect": { "contains": "Never play Bad Band" } },
+    { "hook": "tap", "action": "artistOfSong", "input": { "action": "artistOfSong", "surface": "menu", "context": { "kind": "track", "uri": "x:1", "title": "Song A", "subtitle": "Bad Band" } } },
+    { "event": "track" }
+  ]
+}

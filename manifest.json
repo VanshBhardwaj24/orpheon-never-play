@@ -1,0 +1,28 @@
+{
+  "id": "io.github.vanshbhardwaj24.neverplay",
+  "name": "Never Play",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "author": "Vansh Bhardwaj",
+  "description": "Skip songs, artists and albums you never want to hear again, plus words like sped up or karaoke. Add them from the ⋯ menu or the player. Works offline: nothing is sent anywhere.",
+  "homepage": "https://github.com/VanshBhardwaj24/orpheon-never-play",
+  "category": "playback",
+  "tags": ["block", "skip", "dislike", "never play", "filter", "artists", "sped up"],
+  "changelog": "First version: never play a song, artist or album from the ⋯ menu or the player, and skip titles with words you list.",
+  "actions": [
+    { "name": "menu.items", "why": "Adds Never play this song / artist / album to the ⋯ menu" },
+    { "name": "player.buttons", "why": "Adds a Never play this song button under the player" },
+    { "name": "playback.events", "why": "Sees each new song, to know when a blocked one comes up" },
+    { "name": "playback.control", "why": "Skips to the next song when a blocked one starts" },
+    { "name": "storage", "why": "Keeps your never-play list on this phone" },
+    { "name": "settings.page", "why": "Your word list, the list's size, and clearing it" },
+    { "name": "notify", "why": "Tells you which song was skipped and why" }
+  ],
+  "settings": [
+    { "key": "words", "type": "text", "label": "Skip titles with these words", "description": "Comma-separated, whole words, e.g. sped up, slowed, nightcore, karaoke, 8d.", "default": "" },
+    { "key": "tell", "type": "toggle", "label": "Tell me when a song is skipped", "default": true },
+    { "key": "show", "type": "button", "label": "Show my list", "description": "Says how many songs, artists and albums are on the list." },
+    { "key": "clear", "type": "button", "label": "Clear the list", "description": "Removes every song, artist and album (not the words)." },
+    { "key": "support", "type": "button", "label": "Support Never Play", "description": "Free and open source. A coffee keeps updates coming: ko-fi.com/vanshmusic. Also by me: Fresh Home, new releases and charts on Home." }
+  ]
+}

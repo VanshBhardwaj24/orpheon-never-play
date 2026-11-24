@@ -1,0 +1,9 @@
+{
+  "offline": true,
+  "track": { "title": "Song A", "artist": "Bad Band" },
+  "steps": [
+    { "event": "setting", "input": { "key": "clear", "pressed": true } },
+    { "storage": { "artists": {} } },
+    { "event": "track" }
+  ]
+}

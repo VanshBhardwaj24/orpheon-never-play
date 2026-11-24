@@ -1,0 +1,6 @@
+{
+  "offline": true,
+  "settings": { "words": "sped up, nightcore" },
+  "track": { "title": "Song (Sped Up)", "artist": "Fine Band" },
+  "steps": [ { "event": "track" } ]
+}

@@ -1,0 +1,6 @@
+{
+  "offline": true,
+  "settings": { "words": "sped up" },
+  "track": { "title": "Speedy Gonzales", "artist": "Fine Band" },
+  "steps": [ { "event": "track" } ]
+}
